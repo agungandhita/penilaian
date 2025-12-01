@@ -12,7 +12,10 @@
 <body class="bg-gray-50 text-gray-800">
     <div x-data="{ open: false }" class="min-h-screen flex">
         <aside :class="open ? 'block' : 'hidden md:block'" class="w-64 bg-gradient-to-b from-green-600 to-green-700 text-white md:flex md:flex-col">
-            <div class="px-4 py-4 text-xl font-semibold">Sistem Penilaian</div>
+            <div class="px-4 py-4 flex items-center gap-3">
+                <img src="{{ asset('img/logo.png') }}" alt="Logo" class="w-10 h-10 object-contain rounded" />
+                <div class="text-xl font-semibold">Sistem Penilaian</div>
+            </div>
             <nav class="px-2 space-y-1">
                 <a href="{{ route('dashboard') }}" class="block px-3 py-2 rounded hover:bg-green-800">Dashboard</a>
                 <a href="{{ route('kelas.index') }}" class="block px-3 py-2 rounded hover:bg-green-800">Data Kelas</a>

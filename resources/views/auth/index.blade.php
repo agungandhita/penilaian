@@ -7,7 +7,14 @@
   <div class="w-full max-w-7xl mx-auto relative z-10 py-12">
     <div class="grid lg:grid-cols-1 gap-8 items-center max-w-6xl mx-auto">
       <div class="order-2 lg:order-1 bg-white border border-gray-200 rounded-2xl p-8 shadow-lg w-full max-w-md mx-auto">
+        <div class="flex items-center justify-between mb-6">
+          <a href="{{ route('home') }}" class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-md bg-green-50 text-green-700 border border-green-200 hover:bg-green-100">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Kembali</span>
+          </a>
+        </div>
         <div class="text-center mb-8">
+          <img src="{{ asset('img/logo.png') }}" alt="Logo" class="mx-auto w-16 h-16 object-contain mb-3" />
           <h1 class="text-gray-800 text-3xl sm:text-4xl font-bold">Sistem Penilaian SMA Sunan Drajat Sugio</h1>
         </div>
         <form class="space-y-6" action="/login" method="POST">
@@ -55,7 +62,6 @@
             <button type="submit" class="w-full bg-green-600 hover:bg-green-700 py-3.5 px-4 text-[15px] font-medium tracking-wide rounded-lg text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300">Masuk sebagai Guru</button>
           </div>
         </form>
-        <p class="text-sm mt-6 text-center text-gray-600">Belum punya akun? <a href="/register" class="text-green-600 font-medium hover:text-green-700 ml-1 whitespace-nowrap transition-colors">Daftar di sini</a></p>
       </div>
     </div>
   </div>
